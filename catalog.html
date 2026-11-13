@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Products | SELF+FISH</title>
+<meta name="description" content="Browse the SELF+FISH collection: the Journal, Audio Journal, and more, created with intention.">
+<meta property="og:title" content="Products | SELF+FISH">
+<meta property="og:image" content="assets/images/self-fish-portrait-1.jpg">
+<meta name="theme-color" content="#3d5340">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="catalog-page">
+<a class="skip" href="#main">Skip to content</a>
+<div class="announce">Welcome to a journey back to you.</div>
+
+<header class="nav" id="top">
+  <div class="wrap nav-in">
+    <a class="logo" href="index.html" aria-label="SELF+FISH home"><img src="https://selfandfish.com/cdn/shop/files/SELF_FISH_Header_Logo_511797b3-0ad2-4947-b861-9e5bd2593ad7.png" alt="SELF+FISH" height="52" onerror="this.replaceWith(document.createTextNode('SELF+FISH'))"></a>
+    <nav id="menu" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="index.html#story">Our Story</a>
+      <a href="catalog.html" aria-current="page">Shop</a>
+      <a href="index.html#journal">Journal</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a class="bag" href="https://selfandfish.com/cart" aria-label="Shopping bag">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8a3 3 0 016 0"/></svg>
+    </a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+  <section class="cat-head">
+    <div class="wrap">
+      <h1>Products</h1>
+      <p class="lead">Created with intention. Timeless pieces for a more intentional life.</p>
+    </div>
+  </section>
+
+  <section class="cat-body">
+    <div class="wrap">
+      <div class="toolbar">
+        <span id="count" class="count" aria-live="polite"></span>
+        <div class="tabs" id="tabs" role="group" aria-label="Filter by availability">
+          <button class="tab" data-v="all" aria-pressed="true">All</button>
+          <button class="tab" data-v="in" aria-pressed="false">Available now</button>
+          <button class="tab" data-v="soon" aria-pressed="false">Coming soon</button>
+        </div>
+        <label>Sort
+          <select id="fSort"><option value="feat">Featured</option><option value="lo">Price, low to high</option><option value="hi">Price, high to low</option><option value="az">Name, A to Z</option></select>
+        </label>
+      </div>
+      <div class="grid" id="products" aria-live="polite"><p class="state">Loading the collection…</p></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-in">
+    <div><a class="logo" href="index.html">SELF<span>+</span>FISH</a><p>A Gentle Return to Me.</p></div>
+    <nav aria-label="Footer">
+      <a href="index.html#story">Our Story</a><a href="catalog.html">Shop</a><a href="index.html#journal">Journal</a>
+      <a href="https://selfandfish.com/pages/contact">Contact</a>
+    </nav>
+    <nav aria-label="Legal">
+      <a href="https://selfandfish.com/policies/privacy-policy">Privacy Policy</a>
+      <a href="https://selfandfish.com/policies/terms-of-service">Terms and Conditions</a>
+    </nav>
+  </div>
+  <p class="wrap copy"><span>&copy; <span id="yr"></span> SELF+FISH. All rights reserved.</span></p>
+</footer>
+<script src="config.js"></script>
+<script src="nav.js"></script>
+<script src="catalog.js"></script>
+</body>
+</html>
